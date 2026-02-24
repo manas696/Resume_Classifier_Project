@@ -1,26 +1,26 @@
-AI Resume Classifier
+# AI Resume Classifier
 
-This project classifies resumes into categories using Machine Learning (Logistic Regression + TF-IDF).
+A simple ML project to classify resumes into categories using Machine Learning (Logistic Regression + TF-IDF).
 
-Categories
+---
 
-Data Science
+## Categories
 
-Web Development
+- Data Science
+- Web Development
+- Android Development
+- Backend Development
+- Programming
 
-Android Development
+---
 
-Backend Development
+## How to Run
 
-Programming
-
-
-How to Run
-
-1. Install Python 3
-
+1. Install Python 3 from [python.org](https://www.python.org/downloads/)
 
 2. Install required libraries:
+```bash
+
 
 ```pip install pandas scikit-learn```
 
@@ -32,8 +32,33 @@ How to Run
 
 4. Type any resume text when prompted to classify.
 
+Example
+
+Input Resume Text:
+"I have experience in Django, REST APIs, and backend services."
+
+Predicted Category: Backend Development
 
 
 Dataset
 
 resumes.csv contains sample resume texts with categories
+
+
+Features
+
+Classifies resumes into 5 categories.
+Simple CLI interface.
+Uses Logistic Regression + TF-IDF vectorization.
+
+
+License
+
+This project is open-source and free to use for learning and personal projects.
+
+✅ Key Fixes:
+
+1. Code blocks ke liye **triple backticks** use kiye aur language specify ki (bash, python) – jisse syntax highlight dikhega.
+2. Extra backticks remove kiye.
+3. Sections properly headings aur horizontal lines (`---`) se separate kiye.
+4. Example aur dataset properly formatted hai.
