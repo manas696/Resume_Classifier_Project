@@ -1,64 +1,101 @@
-# AI Resume Classifier
+AI Resume Classifier
 
-A simple ML project to classify resumes into categories using Machine Learning (Logistic Regression + TF-IDF).
+A machine learning-based resume classification system that categorizes resumes into different job domains using TF-IDF vectorization and Logistic Regression. Perfect for recruiters, HRs, or personal projects.
+ 
+# Features:
 
----
-
-## Categories
+Classifies resumes into 5 categories:
 
 - Data Science
+- Backend Development
 - Web Development
 - Android Development
-- Backend Development
-- Programming
-
----
-
-## How to Run
-
-1. Install Python 3 from [python.org](https://www.python.org/downloads/)
-
-2. Install required libraries:
-```bash
+- Programming.
 
 
-```pip install pandas scikit-learn```
+Additional features:
+
+* Supports single resume classification or multiple resumes at once.
+* Built with Python, Pandas, scikit-learn, and Streamlit.
+* Interactive web interface for quick testing and demo.
+* Open-source and easy to modify for learning and personal projects.
 
 
-3. Run project:
+
+
+💻 Installation:
+
+1.Install Python 3: python.org 
+2.Install required libraries:
+
+
+```pip install pandas scikit-learn streamlit```
+
+
+
+ 🖥️ Run project ( CLI version ):
 
 ```python resume_classifier.py```
+Enter any resume text when prompted.
+Example:
+Input:
 
 
-4. Type any resume text when prompted to classify.
+I have experience in Django, REST APIs, and backend services.
+Output:
 
-Example
-
-Input Resume Text:
-"I have experience in Django, REST APIs, and backend services."
 
 Predicted Category: Backend Development
 
 
-Dataset
-
-resumes.csv contains sample resume texts with categories
+💻🖥️ Streamlit Web Version:
 
 
-Features
+```streamlit run app.py```
 
-Classifies resumes into 5 categories.
-Simple CLI interface.
-Uses Logistic Regression + TF-IDF vectorization.
+* Open browser → enter resume text → click Classify.
+* Multiple resume files can also be tested using the bulk upload feature.
 
 
-License
+
+
+
+📁 Dataset:
+
+
+resumes.csv contains sample resume texts and their categories for training.
+
+* Column:
+
+resume_text: resume content
+category: corresponding job category
+
+
+
+⚙️ How It Works:
+
+- TF-IDF Vectorizer: Converts text into numerical features.
+- Logistic Regression: Trains on sample resumes to classify new inputs.
+- Streamlit UI: Provides an interactive interface for testing and deployment.
+
+
+⚙️ Technology Stack:
+
+- 🐍 Python 3.10+
+- 📊 Pandas
+- 🤖 scikit-learn
+- 🖥️ Streamlit
+
+
+📒 Usage:
+
+- Recruiters: Quickly categorize incoming resumes.
+- HR Automation: Integrate as a backend service for resume screening.
+- Students: Learn ML & NLP concepts practically.
+
+
+
+
+📄 License:
 
 This project is open-source and free to use for learning and personal projects.
-
-✅ Key Fixes:
-
-1. Code blocks ke liye **triple backticks** use kiye aur language specify ki (bash, python) – jisse syntax highlight dikhega.
-2. Extra backticks remove kiye.
-3. Sections properly headings aur horizontal lines (`---`) se separate kiye.
-4. Example aur dataset properly formatted hai.
