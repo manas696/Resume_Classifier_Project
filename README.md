@@ -23,6 +23,9 @@ Additional features:
 
 
 
+
+
+
 💻 Installation:
 
 1.Install Python 3: python.org 
@@ -33,6 +36,10 @@ Additional features:
 
 
 
+
+ 
+ 
+ 
  🖥️ Run project ( CLI version ):
 
 ```python resume_classifier.py```
@@ -48,6 +55,10 @@ Output:
 Predicted Category: Backend Development
 
 
+
+
+
+
 💻🖥️ Streamlit Web Version:
 
 
@@ -60,8 +71,12 @@ Predicted Category: Backend Development
 
 
 
-📁 Dataset:
 
+
+
+
+
+📁 Dataset:
 
 resumes.csv contains sample resume texts and their categories for training.
 
@@ -72,11 +87,22 @@ category: corresponding job category
 
 
 
+
+
+
+
+
 ⚙️ How It Works:
 
 - TF-IDF Vectorizer: Converts text into numerical features.
 - Logistic Regression: Trains on sample resumes to classify new inputs.
 - Streamlit UI: Provides an interactive interface for testing and deployment.
+
+
+
+
+
+
 
 
 ⚙️ Technology Stack:
@@ -87,11 +113,23 @@ category: corresponding job category
 - 🖥️ Streamlit
 
 
+
+
+
+
+
+
+
 📒 Usage:
 
 - Recruiters: Quickly categorize incoming resumes.
 - HR Automation: Integrate as a backend service for resume screening.
 - Students: Learn ML & NLP concepts practically.
+
+
+
+
+
 
 
 
